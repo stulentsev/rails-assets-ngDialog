@@ -5,7 +5,7 @@ require "rails-assets-angular"
 module RailsAssetsNgdialog
 
   def self.gem_path
-    Pathname(__FILE__).join('../..')
+    Pathname(File.realpath(__FILE__)).join('../..')
   end
 
   def self.gem_spec

@@ -6,12 +6,13 @@ This gem was automatically generated. You can visit [rails-assets.org](https://r
 
 ## Usage
 
-Add these two lines to your application’s `Gemfile`:
+Add rails-assets source block to your `Gemfile`:
 
 ```ruby
-source "https://rails-assets.org"
+source "https://rails-assets.org" do
+  gem "rails-assets-ngDialog"
+end
 
-gem "rails-assets-ngDialog"
 ```
 
 Then, import the asset using Sprockets’ `require` directive:
